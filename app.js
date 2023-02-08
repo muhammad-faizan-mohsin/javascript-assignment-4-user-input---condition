@@ -89,44 +89,109 @@
 // var marksObt = prompt("Enter Your Marks");
 // var totalMarks = 300;
 // var percentage = marksObt / totalMarks * 100
-// if (marksObt < 60){
+// if (percentage < 60){
 //     document.write("<h1>Mark Sheet</h1>" +"<br />" + "Total Marks: " + totalMarks +"<br />" + "Marks Obtained: " + marksObt +"<br />" + "percentage: " +percentage+"<br />" +"grade : Fail" +"<br />" + "Remarks: Sorry")
 // }
 
-// if (marksObt >= 60){
+// else if (percentage >= 60 && percentage <= 70){
 //     document.write("<h1>Mark Sheet</h1>" +"<br />" + "Total Marks: " + totalMarks +"<br />" + "Marks Obtained: " + marksObt +"<br />" + "percentage: " +percentage+"<br />" +"grade : b" +"<br />" + "Remarks: You need to improve")
 // }
 
 
-// if (marksObt >= 70){
+// else if (percentage >= 70 && percentage <= 80){
 //     document.write("<h1>Mark Sheet</h1>" +"<br />" + "Total Marks: " + totalMarks +"<br />" + "Marks Obtained: " + marksObt +"<br />" + "percentage: " +percentage+"<br />" +"grade : a" +"<br />" + "Remarks: Good")
 // }
 
 
-// if (marksObt >= 80){
+// else if (percentage >= 80 && percentage <= 100){
 //     document.write("<h1>Mark Sheet</h1>" +"<br />" + "Total Marks: " + totalMarks +"<br />" + "Marks Obtained: " + marksObt +"<br />" + "percentage: " +percentage+"<br />" +"grade : A-one grade" +"<br />" + "Remarks: Excellent")
 // }
 
 
 
 // answer 7
-  
-// var guessNum = prompt("Enter Any Number (ranging from 1 to 10)");
+// var num = 2;
+// var guessNum = +prompt("Enter Any Number (ranging from 1 to 10)");
 
-// if(guessNum === "7"){
-// document.write("Bingo! Correct answer.")
+// if(num === guessNum){
+// alert("Bingo! Correct answer.")
 // }
 
 
-// if(guessNum === "8"){
-//     document.write("Close enough to the correct answer.")
+// else if( ++num == guessNum  ){
+//     alert("Close enough to the correct answer.")
+//     }
+//     else{
+//     alert   ("not correct")
 //     }
 
 // answer 8
 
 // var check = prompt("enter number")
-// var divide = check / 3;
+// var divide = check % 3;
 
-// if(check === divide){
+// if(divide == 0){
+//     alert("This number is divisible by 3")
+// }
 
+// answer 9
+// var num = +prompt("enter num")
+// var even = num % 2;
+
+// if(even === 0){
+//     alert("its even")
+// }
+// else if(even !== 0){
+//     alert("its odd")
+// }
+
+// answer 10
+
+// var temp = +prompt("Enter Temperature")
+// if(temp > 10 && temp < 20 ){
+// document.write("OMG! Today’s weather is so Cool.")
+// }
+// else if(temp > 20 && temp < 30){
+//     document.write("Today’s Weather is cool.")
+//     }
+//     else if(temp > 30 && temp < 40){
+//         document.write("The Weather today is Normal.")
+//         }
+//         else if(temp > 40 && temp < 50){
+//             document.write("It is too hot outside.")
+//             }
+
+// answer 11
+
+// var a = +prompt("enter First value");
+// var operator = prompt("enter Operation");
+// var b = +prompt("enter Second value");
+// if(operator === "+"){
+//     alert(a+b)
+// }
+// else if(operator === "-"){
+//     alert(a-b)
+// }
+// else if(operator === "*"){
+//     alert(a*b)
+// }
+// else if(operator === "/"){
+//     alert(a/b)
+// }
+// else if(operator === "%"){
+//     alert(a%b)
+// }
+
+
+// Exersice
+
+// var greeting;
+// var hour = 13;
+// if (hour > 18) {
+// greeting = "Good day";
+// console.log(greeting)
+// }
+// else{
+// greeting = "Good evening";
+// console.log(greeting)
 // }
